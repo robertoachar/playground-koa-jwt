@@ -10,6 +10,11 @@ const error = async (ctx, next) => {
         ctx.body = { message: err.message };
         break;
 
+      case 'UnauthorizedError':
+        ctx.status = 401;
+        ctx.body = { message: err.message };
+        break;
+
       default:
         ctx.status = 500;
         ctx.body = { message: 'Something is broken' };
