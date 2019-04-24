@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "dotenv": "7.0.0",
+    "esm": "3.2.22",
     "jsonwebtoken": "8.5.1",
     "koa": "2.7.0",
     "koa-bodyparser": "4.2.1",

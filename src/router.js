@@ -1,7 +1,7 @@
-const KoaRouter = require('koa-router');
-const jwt = require('jsonwebtoken');
+import KoaRouter from 'koa-router';
+import jwt from 'jsonwebtoken';
 
-const config = require('./config');
+import config from './config';
 
 const router = KoaRouter();
 
@@ -56,4 +56,4 @@ router.get('/protected', async (ctx) => {
   });
 });
 
-module.exports = router;
+export default router;
